@@ -4,7 +4,7 @@
 # This file is Copyright (c) 2019 Sean Cross <sean@xobs.io>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from nmigen.compat.fhdl.module import DUID
+from litex.compat.migen.fhdl.duid import DUID
 from litex.compat.migen.util.misc import xdir
 
 from litex.soc.interconnect.csr_eventmanager import EventManager

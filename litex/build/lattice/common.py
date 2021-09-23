@@ -140,12 +140,6 @@ class LatticeECP5DifferentialOutput:
 
 lattice_ecp5_special_overrides = {
     AsyncResetSynchronizer: LatticeECP5AsyncResetSynchronizer,
-    SDRInput:               LatticeECP5SDRInput,
-    SDROutput:              LatticeECP5SDROutput,
-    DDRInput:               LatticeECP5DDRInput,
-    DDROutput:              LatticeECP5DDROutput,
-    DifferentialInput:      LatticeECP5DifferentialInput,
-    DifferentialOutput:     LatticeECP5DifferentialOutput,
 }
 
 # ECP5 Trellis Tristate ----------------------------------------------------------------------------
@@ -171,12 +165,7 @@ class LatticeECP5TrellisTristate(Module):
 
 lattice_ecp5_trellis_special_overrides = {
     AsyncResetSynchronizer: LatticeECP5AsyncResetSynchronizer,
-    Tristate:               LatticeECP5TrellisTristate,
-    SDRInput:               LatticeECP5SDRInput,
-    SDROutput:              LatticeECP5SDROutput,
-    DDRInput:               LatticeECP5DDRInput,
-    DDROutput:              LatticeECP5DDROutput,
-    DifferentialInput:      LatticeECP5DifferentialInput,
+    Tristate:               LatticeECP5TrellisTristate
 }
 
 
@@ -302,16 +291,11 @@ class LatticeNXDDROutput:
 
 lattice_NX_special_overrides = {
     AsyncResetSynchronizer: LatticeNXAsyncResetSynchronizer,
-    SDRInput:               LatticeNXSDRInput,
-    SDROutput:              LatticeNXSDROutput,
-    DDRInput:               LatticeNXDDRInput,
-    DDROutput:              LatticeNXDDROutput,
 }
 
 lattice_NX_special_overrides_for_oxide = dict(lattice_NX_special_overrides)
 lattice_NX_special_overrides_for_oxide.update({
-    SDRInput:               LatticeNXSDRInputViaFlipFlop,
-    SDROutput:              LatticeNXSDROutputViaFlipFlop,
+
 })
 
 # iCE40 AsyncResetSynchronizer ---------------------------------------------------------------------
@@ -472,10 +456,4 @@ class LatticeiCE40SDRTristate(Module):
 lattice_ice40_special_overrides = {
     AsyncResetSynchronizer: LatticeiCE40AsyncResetSynchronizer,
     Tristate:               LatticeiCE40Tristate,
-    DifferentialOutput:     LatticeiCE40DifferentialOutput,
-    DDROutput:              LatticeiCE40DDROutput,
-    DDRInput:               LatticeiCE40DDRInput,
-    SDROutput:              LatticeiCE40SDROutput,
-    SDRInput:               LatticeiCE40SDRInput,
-    SDRTristate:            LatticeiCE40SDRTristate,
 }

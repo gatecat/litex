@@ -19,8 +19,8 @@ from operator import or_
 
 from nmigen.compat import *
 from nmigen.compat.genlib.record import *
-from litex.genlib.misc import chooser
-from litex.util.misc import xdir
+from litex.compat.migen.genlib.misc import chooser
+from litex.compat.migen.util.misc import xdir
 
 from litex.soc.interconnect import csr
 from litex.soc.interconnect.csr import CSRStorage

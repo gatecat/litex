@@ -11,8 +11,6 @@ import subprocess
 import sys
 from shutil import which
 
-from nmigen.compat.fhdl.structure import _Fragment
-
 from litex.build.generic_platform import *
 from litex.build import tools
 from litex.build.lattice import common
@@ -136,8 +134,6 @@ class LatticeOxideToolchain:
         os.chdir(build_dir)
 
         # Finalize design
-        if not isinstance(fragment, _Fragment):
-            fragment = fragment.get_fragment()
         platform.finalize(fragment)
 
         # Generate verilog

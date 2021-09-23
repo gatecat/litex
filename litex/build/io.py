@@ -6,8 +6,12 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 from nmigen.compat import *
-from nmigen.compat.fhdl.specials import Special, Tristate
+from nmigen.compat.fhdl.specials import Tristate
 
+(SPECIAL_INPUT, SPECIAL_OUTPUT, SPECIAL_INOUT) = range(3)
+
+class Special:
+    pass
 # Differential Input/Output ------------------------------------------------------------------------
 
 class DifferentialInput(Special):

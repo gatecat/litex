@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 from nmigen.compat import *
-from nmigen.compat.util.misc import xdir
+from litex.compat.migen.util.misc import xdir
 from nmigen.compat.fhdl.specials import Memory
 
 from litex.soc.integration.doc import ModuleDoc

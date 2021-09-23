@@ -15,10 +15,6 @@ import subprocess
 import shutil
 from shutil import which
 
-from nmigen.compat.fhdl.structure import _Fragment
-
-from litex.gen.fhdl.verilog import DummyAttrTranslate
-
 from litex.build.generic_platform import *
 from litex.build import tools
 from litex.build.lattice import common
@@ -271,8 +267,6 @@ class LatticeRadiantToolchain:
         os.chdir(build_dir)
 
         # Finalize design
-        if not isinstance(fragment, _Fragment):
-            fragment = fragment.get_fragment()
         platform.finalize(fragment)
 
         # Generate verilog
