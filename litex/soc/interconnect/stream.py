@@ -9,7 +9,7 @@
 import math
 
 from nmigen.compat import *
-from nmigen.compat.util.misc import xdir
+from litex.compat.migen.util.misc import xdir
 from nmigen.compat.genlib import fifo
 from nmigen.compat.genlib.cdc import MultiReg, PulseSynchronizer
 
@@ -885,24 +885,5 @@ class Pipeline(Module):
 # BufferizeEndpoints -------------------------------------------------------------------------------
 
 # Add buffers on Endpoints (can be used to improve timings)
-class BufferizeEndpoints(ModuleTransformer):
-    def __init__(self, endpoint_dict):
-        self.endpoint_dict = endpoint_dict
-
-    def transform_instance(self, submodule):
-        for name, direction in self.endpoint_dict.items():
-            endpoint = getattr(submodule, name)
-            # add buffer on sinks
-            if direction == DIR_SINK:
-                buf = Buffer(endpoint.description)
-                submodule.submodules += buf
-                setattr(submodule, name, buf.sink)
-                submodule.comb += buf.source.connect(endpoint)
-            # add buffer on sources
-            elif direction == DIR_SOURCE:
-                buf = Buffer(endpoint.description)
-                submodule.submodules += buf
-                submodule.comb += endpoint.connect(buf.sink)
-                setattr(submodule, name, buf.source)
-            else:
-                raise ValueError
+class BufferizeEndpoints:
+    pass
