@@ -24,7 +24,7 @@ import inspect
 from shutil import which
 from sysconfig import get_platform
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.interconnect.csr import CSRStatus
 

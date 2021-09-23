@@ -4,7 +4,7 @@
 # This file is Copyright (c) 2018 Florent Kermarrec <florent@enjoy-digital.fr>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
+from nmigen.compat import *
 
 
 def reverse_bits(s):

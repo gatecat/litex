@@ -11,11 +11,11 @@ import os
 import sys
 import subprocess
 
-from migen.fhdl.structure import *
-from migen.fhdl.specials import Instance, Tristate
-from migen.fhdl.module import Module
-from migen.genlib.cdc import *
-from migen.genlib.resetsync import AsyncResetSynchronizer
+from nmigen.compat.fhdl.structure import *
+from nmigen.compat.fhdl.specials import Instance, Tristate
+from nmigen.compat.fhdl.module import Module
+from nmigen.compat.genlib.cdc import *
+from nmigen.compat.genlib.resetsync import AsyncResetSynchronizer
 
 from litex.build.io import *
 from litex.build import tools

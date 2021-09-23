@@ -7,7 +7,7 @@
 import unittest
 import random
 
-from migen import *
+from nmigen.compat import *
 
 from litedram.common import *
 from litedram.frontend.ecc import *

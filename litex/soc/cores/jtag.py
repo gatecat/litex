@@ -6,8 +6,8 @@
 # Copyright (c) 2017 Robert Jordens <jordens@gmail.com>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
-from migen.genlib.cdc import AsyncResetSynchronizer
+from nmigen.compat import *
+from nmigen.compat.genlib.cdc import AsyncResetSynchronizer
 
 from litex.soc.interconnect import stream
 

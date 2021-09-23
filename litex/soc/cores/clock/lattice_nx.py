@@ -11,7 +11,7 @@ import pprint
 from math import log, log10, exp, pi
 from cmath import phase
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.cores.clock.common import *
 

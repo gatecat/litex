@@ -6,7 +6,7 @@
 
 """Direct Memory Access (DMA) reader and writer modules."""
 
-from migen import *
+from nmigen.compat import *
 
 from litex.gen.common import reverse_bytes
 

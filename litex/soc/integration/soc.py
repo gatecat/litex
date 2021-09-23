@@ -11,7 +11,7 @@ import time
 import datetime
 from math import log2, ceil
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.cores import cpu
 

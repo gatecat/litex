@@ -13,7 +13,7 @@
 
 import inspect
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.integration.soc_core import *
 from litex.soc.integration.soc import auto_int

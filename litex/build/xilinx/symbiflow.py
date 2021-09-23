@@ -13,8 +13,8 @@ from typing import NamedTuple, Union, List
 import re
 from shutil import which
 
-from migen.fhdl.structure import _Fragment, wrap, Constant
-from migen.fhdl.specials import Instance
+from nmigen.compat.fhdl.structure import _Fragment, wrap, Constant
+from nmigen.compat.fhdl.specials import Instance
 
 from litex.build.generic_platform import *
 from litex.build.xilinx.vivado import _xdc_separator, _format_xdc, _build_xdc

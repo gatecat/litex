@@ -7,7 +7,7 @@
 import unittest
 import random
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.interconnect.axi import *
 from litex.soc.interconnect import wishbone, csr_bus

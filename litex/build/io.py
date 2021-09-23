@@ -5,8 +5,8 @@
 # Copyright (c) 2015 Sebastien Bourdeauducq <sb@m-labs.hk>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
-from migen.fhdl.specials import Special, Tristate
+from nmigen.compat import *
+from nmigen.compat.fhdl.specials import Special, Tristate
 
 # Differential Input/Output ------------------------------------------------------------------------
 

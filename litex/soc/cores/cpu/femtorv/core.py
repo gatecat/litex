@@ -6,7 +6,7 @@
 
 import os
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.interconnect import wishbone
 from litex.soc.cores.cpu import CPU, CPU_GCC_TRIPLE_RISCV32

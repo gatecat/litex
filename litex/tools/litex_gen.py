@@ -9,7 +9,7 @@
 
 import argparse
 
-from migen import *
+from nmigen.compat import *
 
 from litex.build.generic_platform import *
 

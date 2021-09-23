@@ -8,7 +8,7 @@
 from functools import reduce
 from operator import add
 
-from migen import *
+from nmigen.compat import *
 
 # Helpers ------------------------------------------------------------------------------------------
 

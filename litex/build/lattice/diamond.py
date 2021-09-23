@@ -14,7 +14,7 @@ import subprocess
 import shutil
 from shutil import which
 
-from migen.fhdl.structure import _Fragment
+from nmigen.compat.fhdl.structure import _Fragment
 
 from litex.gen.fhdl.verilog import DummyAttrTranslate
 

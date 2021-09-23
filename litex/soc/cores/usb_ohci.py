@@ -7,7 +7,7 @@
 
 import os
 
-from migen import *
+from nmigen.compat import *
 
 from litex import get_data_mod
 

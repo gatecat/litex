@@ -9,7 +9,7 @@ import unittest
 import random
 from collections import namedtuple
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.cores import code_8b10b
 

@@ -15,7 +15,7 @@ Hamming codes with additional parity (SECDED):
 from functools import reduce
 from operator import xor
 
-from migen import *
+from nmigen.compat import *
 
 # Helpers ------------------------------------------------------------------------------------------
 

@@ -10,8 +10,8 @@ import sys
 import os
 import re
 
-from migen.fhdl.structure import Signal, Cat
-from migen.genlib.record import Record
+from nmigen.compat.fhdl.structure import Signal, Cat
+from nmigen.compat.genlib.record import Record
 
 from litex.gen.fhdl import verilog
 

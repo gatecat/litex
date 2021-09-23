@@ -9,9 +9,9 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 
-from migen import *
-from migen.genlib.misc import timeline
-from migen.fhdl.specials import Tristate
+from nmigen.compat import *
+from nmigen.compat.genlib.misc import timeline
+from nmigen.compat.fhdl.specials import Tristate
 
 from litex.gen import *
 

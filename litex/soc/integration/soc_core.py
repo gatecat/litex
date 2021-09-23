@@ -19,7 +19,7 @@
 import os
 import inspect
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.cores import cpu
 from litex.soc.interconnect import wishbone

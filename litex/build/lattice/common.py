@@ -8,10 +8,10 @@
 # Copyright (c) 2021 Charles-Henri Mousset <ch.mousset@gmail.com>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen.fhdl.module import Module
-from migen.fhdl.specials import Instance, Tristate
-from migen.fhdl.bitcontainer import value_bits_sign
-from migen.genlib.resetsync import AsyncResetSynchronizer
+from nmigen.compat.fhdl.module import Module
+from nmigen.compat.fhdl.specials import Instance, Tristate
+from nmigen.compat.fhdl.bitcontainer import value_bits_sign
+from nmigen.compat.genlib.resetsync import AsyncResetSynchronizer
 
 from litex.build.io import *
 

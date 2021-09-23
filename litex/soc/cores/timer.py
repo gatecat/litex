@@ -7,7 +7,7 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.interconnect.csr import *
 from litex.soc.interconnect.csr_eventmanager import *

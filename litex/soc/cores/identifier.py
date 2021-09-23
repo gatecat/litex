@@ -4,7 +4,7 @@
 # Copyright (c) 2013-2015 Sebastien Bourdeauducq <sb@m-labs.hk>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
+from nmigen.compat import *
 
 # Identifier ---------------------------------------------------------------------------------------
 

@@ -11,7 +11,7 @@
 import sys
 import argparse
 
-from migen import *
+from nmigen.compat import *
 
 from litex.build.generic_platform import *
 from litex.build.sim import SimPlatform

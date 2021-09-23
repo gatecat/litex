@@ -22,7 +22,7 @@ scheme called TMDS).
 from functools import reduce
 from operator import add
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.interconnect import stream
 

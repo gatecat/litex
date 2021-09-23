@@ -17,10 +17,10 @@ the configuration and status registers of cores from software.
 from functools import reduce
 from operator import or_
 
-from migen import *
-from migen.genlib.record import *
-from migen.genlib.misc import chooser
-from migen.util.misc import xdir
+from nmigen.compat import *
+from nmigen.compat.genlib.record import *
+from nmigen.compat.genlib.misc import chooser
+from nmigen.compat.util.misc import xdir
 
 from litex.soc.interconnect import csr
 from litex.soc.interconnect.csr import CSRStorage

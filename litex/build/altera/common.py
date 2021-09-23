@@ -5,10 +5,10 @@
 # Copyright (c) 2019 vytautasb <v.buitvydas@limemicro.com>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
-from migen.fhdl.module import Module
-from migen.fhdl.specials import Instance
-from migen.genlib.resetsync import AsyncResetSynchronizer
+from nmigen.compat import *
+from nmigen.compat.fhdl.module import Module
+from nmigen.compat.fhdl.specials import Instance
+from nmigen.compat.genlib.resetsync import AsyncResetSynchronizer
 
 from litex.build.io import *
 

@@ -13,9 +13,9 @@ controllers.
 from functools import reduce
 from operator import or_
 
-from migen import *
-from migen.util.misc import xdir
-from migen.fhdl.tracer import get_obj_var_name
+from nmigen.compat import *
+from nmigen.compat.util.misc import xdir
+from nmigen.compat.fhdl.tracer import get_obj_var_name
 
 from litex.soc.interconnect.csr import *
 

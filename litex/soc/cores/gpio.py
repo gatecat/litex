@@ -5,8 +5,8 @@
 # Copyright (c) 2019-2020 Florent Kermarrec <florent@enjoy-digital.fr>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
-from migen.genlib.cdc import MultiReg
+from nmigen.compat import *
+from nmigen.compat.genlib.cdc import MultiReg
 
 from litex.soc.interconnect.csr import *
 

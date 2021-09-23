@@ -6,9 +6,9 @@
 
 import math
 
-from migen import *
-from migen.fhdl.specials import Tristate
-from migen.genlib.cdc import MultiReg
+from nmigen.compat import *
+from nmigen.compat.fhdl.specials import Tristate
+from nmigen.compat.genlib.cdc import MultiReg
 
 from litex.soc.interconnect import stream
 

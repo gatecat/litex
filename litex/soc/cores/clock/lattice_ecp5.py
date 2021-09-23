@@ -5,8 +5,8 @@
 # Copyright (c) 2021 George Hilliard <thirtythreeforty@gmail.com>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
-from migen.genlib.resetsync import AsyncResetSynchronizer
+from nmigen.compat import *
+from nmigen.compat.genlib.resetsync import AsyncResetSynchronizer
 
 from litex.soc.cores.clock.common import *
 

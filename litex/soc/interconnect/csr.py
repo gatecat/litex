@@ -36,9 +36,9 @@ CSR and memory attributes and return their list.
 
 from enum import IntEnum
 
-from migen import *
-from migen.util.misc import xdir
-from migen.fhdl.tracer import get_obj_var_name
+from nmigen.compat import *
+from nmigen.compat.util.misc import xdir
+from nmigen.compat.fhdl.tracer import get_obj_var_name
 
 # CSRBase ------------------------------------------------------------------------------------------
 

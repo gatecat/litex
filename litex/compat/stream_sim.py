@@ -13,7 +13,7 @@ import random
 import math
 from copy import deepcopy
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.interconnect import stream
 

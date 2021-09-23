@@ -10,7 +10,7 @@ import sys
 import subprocess
 from shutil import which
 
-from migen.fhdl.structure import _Fragment
+from nmigen.compat.fhdl.structure import _Fragment
 from litex import get_data_mod
 from litex.build import tools
 from litex.build.generic_platform import *

@@ -7,7 +7,7 @@
 import logging
 import math
 
-from migen import Record
+from nmigen.compat import Record
 
 from litex.soc.integration.soc import colorer
 

@@ -1,5 +1,5 @@
-from migen import *
-from migen.fhdl.specials import Special
+from nmigen.compat import *
+from nmigen.compat.fhdl.specials import Special
 
 from litex.build.io import *
 

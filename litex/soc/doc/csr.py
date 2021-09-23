@@ -4,9 +4,9 @@
 # Copyright (c) 2020 Sean Cross <sean@xobs.io>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
-from migen.util.misc import xdir
-from migen.fhdl.specials import Memory
+from nmigen.compat import *
+from nmigen.compat.util.misc import xdir
+from nmigen.compat.fhdl.specials import Memory
 
 from litex.soc.integration.doc import ModuleDoc
 from litex.soc.interconnect.csr_bus import SRAM

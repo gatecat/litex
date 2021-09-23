@@ -10,7 +10,7 @@ import sys
 import math
 from shutil import which
 
-from migen.fhdl.structure import _Fragment
+from nmigen.compat.fhdl.structure import _Fragment
 
 from litex.build.generic_platform import *
 from litex.build import tools

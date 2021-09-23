@@ -9,8 +9,8 @@ import re
 
 from typing import Optional, Sequence, Any, Callable, Generator, Dict, Tuple
 
-from migen import *
-from migen.fhdl.namer import Namespace
+from nmigen.compat import *
+from nmigen.compat.fhdl.namer import Namespace
 
 from litex.soc.interconnect import stream
 

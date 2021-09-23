@@ -6,7 +6,7 @@
 
 """Avalon support for LiteX"""
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.interconnect import stream
 

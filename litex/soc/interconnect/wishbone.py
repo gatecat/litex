@@ -13,10 +13,10 @@ from math import log2
 from functools import reduce
 from operator import or_
 
-from migen import *
-from migen.genlib import roundrobin
-from migen.genlib.record import *
-from migen.genlib.misc import split, displacer, chooser, WaitTimer
+from nmigen.compat import *
+from nmigen.compat.genlib import roundrobin
+from nmigen.compat.genlib.record import *
+from nmigen.compat.genlib.misc import split, displacer, chooser, WaitTimer
 
 from litex.build.generic_platform import *
 

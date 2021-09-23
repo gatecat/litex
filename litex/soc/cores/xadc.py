@@ -7,7 +7,7 @@
 # Copyright (c) 2021 Vamsi K Vytla <vamsi.vytla@gmail.com>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.interconnect.csr import *
 

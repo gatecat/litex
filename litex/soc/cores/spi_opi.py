@@ -4,8 +4,8 @@
 # Copyright (c) 2020 bunnie <bunnie@kosagi.com>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen.genlib.cdc import MultiReg
-from migen.genlib.fifo import SyncFIFOBuffered
+from nmigen.compat.genlib.cdc import MultiReg
+from nmigen.compat.genlib.fifo import SyncFIFOBuffered
 
 from litex.soc.interconnect import wishbone
 from litex.soc.interconnect.csr_eventmanager import *

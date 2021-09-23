@@ -8,10 +8,10 @@
 
 import math
 
-from migen import *
-from migen.util.misc import xdir
-from migen.genlib import fifo
-from migen.genlib.cdc import MultiReg, PulseSynchronizer
+from nmigen.compat import *
+from nmigen.compat.util.misc import xdir
+from nmigen.compat.genlib import fifo
+from nmigen.compat.genlib.cdc import MultiReg, PulseSynchronizer
 
 from litex.soc.interconnect.csr import *
 

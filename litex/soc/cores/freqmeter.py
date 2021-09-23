@@ -4,9 +4,9 @@
 # Copyright (c) 2017-2019 Florent Kermarrec <florent@enjoy-digital.fr>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
-from migen.genlib.cdc import MultiReg, GrayCounter
-from migen.genlib.cdc import GrayDecoder
+from nmigen.compat import *
+from nmigen.compat.genlib.cdc import MultiReg, GrayCounter
+from nmigen.compat.genlib.cdc import GrayDecoder
 
 from litex.soc.interconnect.csr import *
 

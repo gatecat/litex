@@ -6,9 +6,9 @@
 # This file is Copyright (c) 2020 Antmicro <www.antmicro.com>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen.fhdl.structure import Signal, If, Finish
-from migen.fhdl.module import Module
-from migen.genlib.record import Record
+from nmigen.compat.fhdl.structure import Signal, If, Finish
+from nmigen.compat.fhdl.module import Module
+from nmigen.compat.genlib.record import Record
 
 from litex.build.generic_platform import GenericPlatform, Pins
 from litex.build.sim import common, verilator

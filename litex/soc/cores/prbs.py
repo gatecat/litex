@@ -8,9 +8,9 @@
 from operator import xor, add
 from functools import reduce
 
-from migen import *
-from migen.genlib.misc import WaitTimer
-from migen.genlib.cdc import MultiReg
+from nmigen.compat import *
+from nmigen.compat.genlib.misc import WaitTimer
+from nmigen.compat.genlib.cdc import MultiReg
 
 # PRBS Generators ----------------------------------------------------------------------------------
 

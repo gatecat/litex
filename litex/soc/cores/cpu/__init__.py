@@ -5,7 +5,7 @@
 # Copyright (c) 2017-2018 Tim 'mithro' Ansell <me@mith.ro>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
+from nmigen.compat import *
 
 # CPU ----------------------------------------------------------------------------------------------
 

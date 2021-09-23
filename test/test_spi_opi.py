@@ -6,7 +6,7 @@
 
 import unittest
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.cores.spi_opi import S7SPIOPI
 

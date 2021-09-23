@@ -7,8 +7,8 @@
 import os
 import re
 
-from migen import *
-from migen.fhdl.specials import Tristate
+from nmigen.compat import *
+from nmigen.compat.fhdl.specials import Tristate
 
 from litex import get_data_mod
 from litex.soc.interconnect import wishbone, stream

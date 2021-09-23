@@ -5,7 +5,7 @@
 # Copyright (c) 2019-2020 Florent Kermarrec <florent@enjoy-digital.fr>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
+from nmigen.compat import *
 
 from litex.soc.cores.clock.common import *
 from litex.soc.cores.clock.xilinx_common import *

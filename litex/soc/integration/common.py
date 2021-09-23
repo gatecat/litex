@@ -11,7 +11,7 @@ import time
 import struct
 import datetime
 
-from migen import *
+from nmigen.compat import *
 
 # Helpers ----------------------------------------------------------------------------------------
 

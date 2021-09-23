@@ -7,10 +7,10 @@
 
 from math import log2
 
-from migen import *
-from migen.genlib.roundrobin import *
-from migen.genlib.record import *
-from migen.genlib.fsm import FSM, NextState
+from nmigen.compat import *
+from nmigen.compat.genlib.roundrobin import *
+from nmigen.compat.genlib.record import *
+from nmigen.compat.genlib.fsm import FSM, NextState
 
 from litex.gen import *
 

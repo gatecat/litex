@@ -5,7 +5,7 @@
 # Copyright (c) 2020 Antmicro <www.antmicro.com>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen.genlib.cdc import MultiReg
+from nmigen.compat.genlib.cdc import MultiReg
 
 from litex.soc.cores.clock import *
 from litex.soc.interconnect import wishbone

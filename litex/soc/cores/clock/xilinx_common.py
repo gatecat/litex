@@ -4,8 +4,8 @@
 # Copyright (c) 2018-2020 Florent Kermarrec <florent@enjoy-digital.fr>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen import *
-from migen.genlib.resetsync import AsyncResetSynchronizer
+from nmigen.compat import *
+from nmigen.compat.genlib.resetsync import AsyncResetSynchronizer
 
 from litex.build.io import DifferentialInput
 

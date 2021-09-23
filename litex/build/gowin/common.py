@@ -4,8 +4,8 @@
 # Copyright (c) 2021 Florent Kermarrec <florent@enjoy-digital.fr>
 # SPDX-License-Identifier: BSD-2-Clause
 
-from migen.fhdl.module import Module
-from migen.genlib.resetsync import AsyncResetSynchronizer
+from nmigen.compat.fhdl.module import Module
+from nmigen.compat.genlib.resetsync import AsyncResetSynchronizer
 
 from litex.build.io import *
 
